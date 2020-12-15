@@ -64,14 +64,14 @@ h1 {
 
 .features-icon {
   color: #ef8172;
-  font-size: 2rem;
+  padding-bottom: 1rem;
 }
 
 .features-icon:hover {
   color: #ff4c68;
 }
 
-.col-lg-4 {
+.feature-box {
   padding: 3rem 0;
 }
 
