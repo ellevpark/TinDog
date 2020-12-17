@@ -17,9 +17,10 @@ h2 {
 }
 
 h3 {
-  font-family: "Montserrat-light", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size:  1.5rem;
   font-weight: bold;
+  padding: 2%;
 }
 
 p {
@@ -37,6 +38,7 @@ p {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  padding: 15px;
   position: absolute;
   right: 30%;
   z-index: 0;
@@ -144,9 +146,35 @@ p {
   padding: 3% 2%;
 } 
 
-@media (max-width: 1100px) {
+.short-text {
+  padding: 3% 2%;
+  height: 316px;
+}
+
+/* CTA Section  */
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+}
+
+#footer {
+  background-color: #fff;
+  padding: 3%;
+  text-align: center;
+}
+.footer-icon {
+  padding: .5rem;
+}
+
+@media (max-width: 1096px) {
   .title-image {
     position: static;
     transform: rotate(0deg);
+  }
+  #title {
+    text-align: center;
+
   }
 }
