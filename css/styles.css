@@ -18,7 +18,7 @@ h2 {
 
 h3 {
   font-family: "Montserrat-light", sans-serif;
-  font-size: 1.5rem;
+  font-size:  1.5rem;
   font-weight: bold;
 }
 
@@ -27,13 +27,29 @@ p {
 }
 
 #title {
-  background-color: #ff4c68;
+  background-color: hsl(351, 100%, 65%);
   color: #fff;
-
+  position: relative;
 }
 
+/* Title Image  */
+
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+  z-index: 0;
+}
+
+.fa-bone {
+  color: white;
+  transform: rotate(35deg);
+}
+
+
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Navbar  */
@@ -64,25 +80,14 @@ p {
   margin: 5% 3% 5% 0%;
 }
 
-/* Title Image  */
-
-.title-image {
-  width: 60%;
-  transform: rotate(25deg);
-}
-
-.fa-bone {
-  color: white;
-  transform: rotate(35deg);
-
-}
-
 /* Features Section */
 
 #features {
-  margin: 5rem auto;
+  margin: 0 auto;
   text-align: center;
-  padding: 5rem;
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
 }
 
 .features-icon {
@@ -138,3 +143,10 @@ p {
 .pricing-col {
   padding: 3% 2%;
 } 
+
+@media (max-width: 1100px) {
+  .title-image {
+    position: static;
+    transform: rotate(0deg);
+  }
+}
